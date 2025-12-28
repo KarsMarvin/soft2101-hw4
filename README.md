@@ -14,7 +14,7 @@ The assignment focuses on:
 - Branching and merging workflows
 - Conflict resolution
   
-## ☕ Java Programming
+## 💻 Java Programming
 - Conditional logic (odd and even number filtering)
 - Method modification without adding new methods
 - Code testing and validation
