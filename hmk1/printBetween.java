@@ -1,4 +1,6 @@
-import java.util.Scanner;public class printBetween {
+import java.util.Scanner;
+
+public class printBetween {
 
     public static void printRange(int a, int b) {
         int start;
