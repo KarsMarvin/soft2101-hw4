@@ -1,0 +1,6 @@
+*.class
+nbproject/
+.vscode/
+target/
+out/
+*.log
