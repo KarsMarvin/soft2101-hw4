@@ -1,1 +1,103 @@
 Q2.Answers
+
+Step a:
+git config --list
+
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Marvin Karera
+user.email=kareramarvin14@gmail.com
+core.editor=code --wait
+
+Step b:
+ls .git
+
+HEAD    description  index  logs/     packed-refs
+config  hooks/       info/  objects/  refs/
+
+Step C:
+[Department of Software Engineering – Işık University](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
+
+Step D:
+
+*.class
+nbproject/
+.vscode/
+target/
+out/
+*.log
+
+Step f:
+git log --oneline
+a6b7053 (HEAD -> feature-1) satisfying requirement one
+
+ls hmk1
+printBetween.class  printBetween.java
+
+git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+ls hmk1
+printBetween.class
+
+
+Step J:
+git log --oneline
+56c0b70 (HEAD -> feature-2) satisfying requirement change two
+
+Step M:
+ git diff feature-1
+diff --git a/hmk1/printBetween.java b/hmk1/printBetween.java
+index 00b9e08..130787a 100644
+--- a/hmk1/printBetween.java
++++ b/hmk1/printBetween.java
+@@ -15,7 +15,9 @@ public class printBetween {
+         }
+
+         for (int i = start + 1; i < end; i++) {
+-            System.out.println(i);
++               if(i%2==0){
++                       System.out.println(i);
++               }
+         }
+     }
+
+
+git diff feature-2
+diff --git a/hmk1/printBetween.java b/hmk1/printBetween.java
+index e66fe83..130787a 100644
+--- a/hmk1/printBetween.java
++++ b/hmk1/printBetween.java
+@@ -15,12 +15,10 @@ public class printBetween {
+         }
+
+         for (int i = start + 1; i < end; i++) {
+-    if (i % 2 != 0) {
+-        System.out.println(i);
+-    }
+-}
+-
+-
++               if(i%2==0){
++                       System.out.println(i);
++               }
++        }
+     }
+
+     public static void main(String[] args) {
+
+$ git diff main feature-3
+$
